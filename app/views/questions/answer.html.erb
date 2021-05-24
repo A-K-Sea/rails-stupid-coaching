@@ -1,6 +1,14 @@
 <h1>The answer to your question is: </h1>
-<%= @current_question %>
+
+<div class=question>
+  <p><%= @current_question %></p>
+  <p>-- YOU</p>
+</div>
 <br>
-<%= @answer %>
+
+<div class=answer>
+  <p><%= @answer %></p>
+  <p>--Your coach</p>
+</div>
 <br>
-<%= link_to "Ask another question", "/ask" %>
+<%= link_to "Ask another question", ask_path %>
